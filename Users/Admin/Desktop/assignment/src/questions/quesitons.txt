@@ -1,0 +1,63 @@
+Q1. Write the full Method. Write the definition for the full method barMaker().This method accepts a single double value, which should be between 0.0 and 1.0 and represents a percentage calculation (.4 would be 40%, etc.). The method will ignore any values outside this range (as seen in the example usage below). The method will return a String that contains the graphical version of the percentage. Notice that the full bar is always the same length: the remaining spaces are filled with blankspace characters.   
+ 
+Examples (This is code found in the main() method with comments): 
+ 
+        System.out.println(barMaker(.9));  // 90%         System.out.println(barMaker(.2));  // 20%         System.out.println(barMaker(.6));  // 60%         System.out.println(barMaker(2.9)); // Error! 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+This is what will print when your program has finished executing the code above, for example. Your code should accept any double!! 
+Q2. Write the full Method. Write the definition for the full method customSearch(). The method will accept two input parameters: a String called littleString, and a String called bigString. Your method will search the String bigString for the first occurrence of littleString. Your method will return back an int representing the index position of where the String was found. If the String was not found, your method will return back a -1. Your method cannot use the .indexOf() or .contains() methods of the String class to accomplish this! You are implementing your own logic for this search. Example uses are below. Your method should be able to accept any two Strings, each of any length and contents! 
+ 
+Examples: 
+ 
+System.out.println(customSearch("hi","bye hi sigh")); System.out.println(customSearch("fortnite","monopoly scrabble jeopardy")); 
+ 
+Outputs: 
+ 
+4 -1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Q3. Full Program:  
+ 
+Work each part of this full program step-by-step, as each successive part builds on the last. 
+ 
+Q3 Part 1: Write the full method definition for a method called lengthLongestWord(). The method will have one input parameter: a String called phrase. This method returns back an int representing the length of the longest word in the String passed into it. Make sure your logic checks every word in the phrase, including the last! 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Q3 Part 2: Write the full method definition for a method called letterCounter(). The method will have two input parameters: a String called phrase, and a char called letter. The method will count the frequency of the passed in letter in the phrase, and will return back an int that represents the frequency of that letter in that phrase. 
+ 
+ 
+  
+Q3 Part 3: Write the full method definition for a method called wordLengthOrder(). This method will have one input parameter, a String called phrase. The method will return back a String that contains all the words in the phrase arranged in ascending sorted order. The method will process phrase in this manner (pseudocode!): o The method will invoke your lengthLongestWord() method from Part 1 to determine the longest word in the phrase. o In a loop from i = 1 to the value of the longest length (int): o The method will examine the length of each word. If the length equals i, it will concatenate that word into the String to be returned. o It will do this for each successive word length. Don’t forget about the last word! o The method will return back a String that has all the words arranged in order of their lengths, from smallest to largest (i = 1 to i = longest word in phrase’s length).  See the example output for this method’s result down below!. 
